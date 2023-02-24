@@ -15,7 +15,7 @@ function divide (a, b) {
 }
 
 function power (a, b) {
-  // your code here
+  return Math.pow(a, b);
 }
 
 function round (a) {
