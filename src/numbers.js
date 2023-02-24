@@ -27,15 +27,16 @@ function roundUp (a) {
 }
 
 function roundDown (a) {
-  return Math.floor (a);
+  return Math.floor(a);
 }
 
 function absolute (a) {
   return Math.abs(a);
 }
 
+//Math.floor() only works with positive numbers. Math.trunc() also works with negative numbers.//
 function quotient (a, b) {
-  // your code here
+  return Math.trunc(a/b);
 }
 
 function remainder (a, b) {
