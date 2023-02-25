@@ -3,7 +3,7 @@ function sayHello (string) {
 };
 
 function uppercase (string) {
-  // your code here
+  return string.toUpperCase();
 };
 
 function lowercase (string) {
