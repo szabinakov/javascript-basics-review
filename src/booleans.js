@@ -19,7 +19,10 @@ function one(a, b) {
 };
 
 function truthiness(a) {
-  //Your code here
+  if (!a) {
+    return false;
+  } else { return true;
+  }
 };
 
 function isEqual(a, b) {
