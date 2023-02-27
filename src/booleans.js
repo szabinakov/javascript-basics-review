@@ -35,11 +35,11 @@ function isLessThanOrEqualTo(a, b) {
 };
 
 function isOdd(a) {
-  // your code here
+  //Your code here
 };
 
 function isEven(a) {
-  // your code here
+  return a % 2 === 0;
 };
 
 function isSquare(a) {
