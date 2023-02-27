@@ -54,11 +54,11 @@ function containsVowels(string) {
   if (string.match(/[aeiou]/gi)) {
     return true;
   } else {return false;
-    }
+  }
 };
 
 function isLowerCase(string) {
-  // your code here
+  return string === string.toLowerCase();
 };
 
 module.exports = {
