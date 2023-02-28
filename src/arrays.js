@@ -1,5 +1,5 @@
 const getNthElement = (index, array) => {
-  return array[index];
+   array[index];
   //Needs more work
   //If n is greater than number of elements it cycles back to the start
 };
@@ -13,7 +13,7 @@ const csvStringToArray = string => {
 };
 
 const addToArray = (element, array) => {
-  // your code here
+  array.push(element);
 };
 
 const addToArray2 = (element, array) => {
