@@ -1,15 +1,14 @@
 const getNthElement = (index, array) => {
-   array[index];
-  //Needs more work
-  //If n is greater than number of elements it cycles back to the start
+   return array[index];
+  //Needs to cycle back to start
 };
 
 const arrayToCSVString = array => {
-  return array.join();
+  array.join();
 };
 
 const csvStringToArray = string => {
-  return string.split(',');
+  string.split(',');
 };
 
 const addToArray = (element, array) => {
@@ -17,7 +16,7 @@ const addToArray = (element, array) => {
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+  return array.concat(element);
 };
 
 const removeNthElement = (index, array) => {
