@@ -1,9 +1,11 @@
 const getNthElement = (index, array) => {
   return array[index];
+  //Needs more work
+  //If n is greater than number of elements it cycles back to the start
 };
 
 const arrayToCSVString = array => {
-  // your code here
+  return array.join();
 };
 
 const csvStringToArray = string => {
