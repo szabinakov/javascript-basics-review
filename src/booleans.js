@@ -21,7 +21,7 @@ function one(a, b) {
 function truthiness(a) {
   if (!a) {
     return false;
-  } else { return true;
+  } else {return true;
   }
 };
 
