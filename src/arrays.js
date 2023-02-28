@@ -4,11 +4,11 @@ const getNthElement = (index, array) => {
 };
 
 const arrayToCSVString = array => {
-  array.join();
+  return array.join();
 };
 
 const csvStringToArray = string => {
-  string.split(',');
+  return string.split(',');
 };
 
 const addToArray = (element, array) => {
@@ -20,7 +20,7 @@ const addToArray2 = (element, array) => {
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  return array.splice(index, 1);
 };
 
 const numbersToStrings = numbers => {
