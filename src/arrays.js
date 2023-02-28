@@ -1,4 +1,3 @@
-// using the modulo operator, this tells us when the array reaches zero as nothing is remaining. This tells the function to return to the start of the array. 
 const getNthElement = (index, array) => {
   const wrappedIndex = index % array.length; 
   return array[wrappedIndex]
@@ -9,19 +8,20 @@ const arrayToCSVString = array => {
 };
 
 const csvStringToArray = string => {
-  return string.split(" ,")
+  const csvArray = string.split(",")
+  return csvArray;
 };
 
 const addToArray = (element, array) => {
- // your code here
+ array.push(element)
 };
 
-const addToArray2 = (element, array) => {
-  // your code here
+let addToArray2 = (element, array) => {
+  return addToArray2 = [...array, element]
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  // your code here 
 };
 
 const numbersToStrings = numbers => {

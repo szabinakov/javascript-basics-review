@@ -86,7 +86,7 @@ function containsVowels(string) {
   let count = 0;
   vowels.forEach(vowel => {
     if(string.includes(vowel)){
-      count++
+      count++ 
     }
   })
   if(count > 0){
