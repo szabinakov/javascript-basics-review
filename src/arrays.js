@@ -27,9 +27,7 @@ const numbersToStrings = numbers => {
 };
 
 const uppercaseWordsInArray = strings => {
-  const makeStrings = strings.toString();
-  const makeUpperCase = strings.toUpperCase();
-  //Need to join back into an array
+  return strings.map(string => string.toUpperCase());
 };
 
 const reverseWordsInArray = strings => {
