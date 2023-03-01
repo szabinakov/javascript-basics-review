@@ -45,11 +45,9 @@ const onlyEven = numbers => {
     return number % 2 === 0;
   });
   return evenNumbers;
-};
+}
 
 const removeNthElement2 = (index, array) => {
-  //Returns an array with the nth element removed
-  //Does not mutate the original
   const firstHalf = array.slice(0, index);
   const secondHalf = array.slice(index + 1);
   const newArray = firstHalf.concat(secondHalf);
@@ -65,7 +63,11 @@ const removeSpaces = string => {
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  let sum = 0;
+  numbers.forEach(number => {
+    sum = sum + number;
+  });
+  return sum;
 };
 
 const sortByLastLetter = strings => {
