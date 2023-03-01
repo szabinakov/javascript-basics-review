@@ -31,11 +31,7 @@ const uppercaseWordsInArray = strings => {
 };
 
 const reverseWordsInArray = strings => {
-  const makeStrings2 = strings.toString();
-  const splitIntoArrays = strings.split("");
-  const reverseArrays = strings.reverse();
-  const joinIntoStrings = strings. join("");
-  //Need to join back into an array
+  return strings.map(string => string.split("").reverse().join(""));  
 };
 
 const onlyEven = numbers => {
