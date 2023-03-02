@@ -35,11 +35,12 @@ const reverseWordsInArray = strings => {
 };
 
 const onlyEven = numbers => {
-  const evenNumbers = numbers.filter(number => {
-    return number % 2 === 0;
-  });
-  return evenNumbers;
-}
+  //const evenNumbers = numbers.filter(number => {
+    //return number % 2 === 0;
+  //});
+  //return evenNumbers;
+  return numbers.filter(number => number % 2 === 0);
+};
 
 const removeNthElement2 = (index, array) => {
   const firstHalf = array.slice(0, index);
@@ -57,10 +58,12 @@ const removeSpaces = string => {
 };
 
 const sumNumbers = numbers => {
-  let sum = 0;
-  numbers.forEach(number => {
-    sum = sum + number;
-  });
+  let sum = 0
+  //numbers.forEach(number => {
+    //sum = sum + number;
+  //});
+  //return sum;
+  numbers.forEach(number => sum += number);
   return sum;
 };
 
