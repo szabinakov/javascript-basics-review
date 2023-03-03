@@ -35,10 +35,6 @@ const reverseWordsInArray = strings => {
 };
 
 const onlyEven = numbers => {
-  //const evenNumbers = numbers.filter(number => {
-    //return number % 2 === 0;
-  //});
-  //return evenNumbers;
   return numbers.filter(number => number % 2 === 0);
 };
 
@@ -57,18 +53,29 @@ const removeSpaces = string => {
   return string.replace(/ /g,"");
 };
 
-const sumNumbers = numbers => {
-  let sum = 0
-  //numbers.forEach(number => {
-    //sum = sum + number;
-  //});
+//const sumNumbers = numbers => {
+  //let sum = 0
+  //numbers.forEach(number => sum += number);
   //return sum;
-  numbers.forEach(number => sum += number);
-  return sum;
+//};
+
+//const sumNumbers = numbers.reduce((acc, number) => {
+  //return acc + number;
+//});
+
+//const sumNumbers = numbers.reduce((acc, num) => {
+  //return acc + num;
+//});
+
+const sumNumbers = numbers => {
+  const totalValue = numbers.reduce((acc, num) => {
+    return acc + num;
+  });
+  return totalValue;
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  //return strings.sort();
 };
 
 module.exports = {
