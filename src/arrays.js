@@ -21,43 +21,64 @@ let addToArray2 = (element, array) => {
 };
 
 const removeNthElement = (index, array) => {
-  // your code here 
+  return array.splice(index,1);
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+ return numbers.map(String)
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  return strings.map(string => string.toUpperCase())
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
+  return strings.map(str => str.split("").reverse().join(""))
 };
 
 const onlyEven = numbers => {
-  // your code here
-};
+  return numbers.filter((num) => num % 2 == 0)
+}
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  // create a new array to hold the result 
+ const result = [];
+ // loop through the current array
+ for (let i = 0; i < array.length; i++){
+  // skip the nth element here
+  if (i !== index){
+    result.push(array[i])
+  }
+ }
+ // return the result array with the element removed
+ return result 
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+  const vowelWords = strings.filter((word) => {
+    const firstLetter = word.charAt(0).toLowerCase();
+    return ["a", "e", "i", "o", "u"].includes(firstLetter)
+  })
+  return vowelWords
 };
 
 const removeSpaces = string => {
-  // your code here
+  return string.replace(/\s/g, '')
+  // the expression uses the \s to represent spaces and the /g to represent a global search. We then replace them with the '' 
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  const initialValue = 0;
+  const total = numbers.reduce((
+    accumulator,currentValue) => accumulator + currentValue, initialValue
+    )
+    return total 
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  const sortByLastChar = (a, b) => a.charAt(a.length -1 ) > b.charAt(b.length - 1) ? 1 : -1;
+  strings.sort(sortByLastChar)
+  return strings 
 };
 
 module.exports = {
