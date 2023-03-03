@@ -53,20 +53,6 @@ const removeSpaces = string => {
   return string.replace(/ /g,"");
 };
 
-//const sumNumbers = numbers => {
-  //let sum = 0
-  //numbers.forEach(number => sum += number);
-  //return sum;
-//};
-
-//const sumNumbers = numbers.reduce((acc, number) => {
-  //return acc + number;
-//});
-
-//const sumNumbers = numbers.reduce((acc, num) => {
-  //return acc + num;
-//});
-
 const sumNumbers = numbers => {
   const totalValue = numbers.reduce((acc, num) => {
     return acc + num;
@@ -75,7 +61,7 @@ const sumNumbers = numbers => {
 };
 
 const sortByLastLetter = strings => {
-  //return strings.sort();
+  return strings.sort ((a, b) => a.charCodeAt(a.length -1) - b.charCodeAt(b.length - 1));
 };
 
 module.exports = {
