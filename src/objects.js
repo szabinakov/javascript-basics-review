@@ -35,7 +35,8 @@ const findHondas = cars => {
 };
 
 const averageAge = people => {
-  // your code here
+  const calculateAverage = people.reduce((acc, person) => acc + person.age, 0) / people.length;
+  return calculateAverage;
 };
 
 const createTalkingPerson = (name, age) => {
