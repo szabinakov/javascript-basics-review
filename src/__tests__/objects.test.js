@@ -125,7 +125,7 @@ describe('getAges', () => {
 });
 
 describe('findByName', () => {
-  xit('returns the person with the given name', () => {
+  it('returns the person with the given name', () => {
     const jim = {
       name: 'Jim',
       age: 66
@@ -207,7 +207,7 @@ describe('averageAge', () => {
 });
 
 describe('createTalkingPerson', () => {
-  xit('returns a person who can introduce themselves', () => {
+  it('returns a person who can introduce themselves', () => {
     const bill = createTalkingPerson('Bill', 40);
     const catherine = createTalkingPerson('Catherine', 21);
     expect(bill).toEqual({
