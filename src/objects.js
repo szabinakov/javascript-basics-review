@@ -1,9 +1,8 @@
 const createPerson = (name, age) => {
-  const person = {
+  return {
     name: name,
-    age: age,
+    age: age
   };
-  return person;
 };
 
 const getName = object => {
@@ -27,7 +26,7 @@ const getAges = people => {
 };
 
 const findByName = (name, people) => {
-  //return people.filter(person => person === person.name);
+  return people.find(person => person.name === name);
 };
 
 const findHondas = cars => {
@@ -40,14 +39,13 @@ const averageAge = people => {
 };
 
 const createTalkingPerson = (name, age) => {
-  const person = {
+  return {
     name: name,
     age: age,
     introduce: function introduce(person) {
       return `Hi ${person}, my name is ${this.name} and I am ${this.age}!`;
     }
   };
-  return person;
 };
 
 module.exports = {
