@@ -1,25 +1,27 @@
 function sayHello (string) {
-  // your code here
+  // TEMPLATE LITERAL
+  return `Hello, ${string}!`;
 };
 
 function uppercase (string) {
-  // your code here
+  return string.toUpperCase();
 };
 
 function lowercase (string) {
-  // your code here
+  return string.toLowerCase();
 };
 
 function countCharacters (string) {
-  // your code here
+  return string.length;
 };
 
 function firstCharacter (string) {
-  // your code here
+  // NOTE: first character begins at 0 not 1!
+return string.charAt()
 };
 
 function firstCharacters (string, n) {
-  // your code here
+  return string.substring(0, n);
 };
 
 module.exports = {
