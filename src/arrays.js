@@ -40,6 +40,9 @@ const onlyEven = numbers => {
   return numbers.filter((num) => num % 2 == 0)
 }
 
+
+
+
 const removeNthElement2 = (index, array) => {
   // create a new array to hold the result 
  const result = [];
