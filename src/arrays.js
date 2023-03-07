@@ -1,61 +1,87 @@
 const getNthElement = (index, array) => {
-  // your code here
+  const wrappedIndex = index % array.length; 
+  return array[wrappedIndex]
 };
 
 const arrayToCSVString = array => {
-  // your code here
+  return array.toString()
 };
 
 const csvStringToArray = string => {
-  // your code here
+  const csvArray = string.split(",")
+  return csvArray;
 };
 
 const addToArray = (element, array) => {
-  // your code here
+ array.push(element)
 };
 
-const addToArray2 = (element, array) => {
-  // your code here
+let addToArray2 = (element, array) => {
+  return addToArray2 = [...array, element]
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  return array.splice(index,1);
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+ return numbers.map(String)
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  return strings.map(string => string.toUpperCase())
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
+  return strings.map(str => str.split("").reverse().join(""))
 };
 
 const onlyEven = numbers => {
-  // your code here
-};
+  return numbers.filter((num) => num % 2 == 0)
+}
+
+
+
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  // create a new array to hold the result 
+ const result = [];
+ // loop through the current array
+ for (let i = 0; i < array.length; i++){
+  // skip the nth element here
+  if (i !== index){
+    result.push(array[i])
+  }
+ }
+ // return the result array with the element removed
+ return result 
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+  const vowelWords = strings.filter((word) => {
+    const firstLetter = word.charAt(0).toLowerCase();
+    return ["a", "e", "i", "o", "u"].includes(firstLetter)
+  })
+  return vowelWords
 };
 
 const removeSpaces = string => {
-  // your code here
+  return string.replace(/\s/g, '')
+  // the expression uses the \s to represent spaces and the /g to represent a global search. We then replace them with the '' 
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  const initialValue = 0;
+  const total = numbers.reduce((
+    accumulator,currentValue) => accumulator + currentValue, initialValue
+    )
+    return total 
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  const sortByLastChar = (a, b) => a.charAt(a.length -1 ) > b.charAt(b.length - 1) ? 1 : -1;
+  strings.sort(sortByLastChar)
+  return strings 
 };
 
 module.exports = {
