@@ -1,21 +1,27 @@
 const getNthElement = (index, array) => {
-  // your code here
+  let newIndex = index;
+  if (index >= array.length) {
+    newIndex = index - array.length;
+  }
+  return array[newIndex];
 };
 
 const arrayToCSVString = array => {
-  // your code here
+  let csvString = array.join(",");
+  return csvString;
 };
 
 const csvStringToArray = string => {
-  // your code here
+  let anArray = string.split(",");
+  return anArray;
 };
 
 const addToArray = (element, array) => {
-  // your code here
+  array.push(element);
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+  return array.concat(element);
 };
 
 const removeNthElement = (index, array) => {
