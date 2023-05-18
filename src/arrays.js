@@ -1,62 +1,73 @@
 const getNthElement = (index, array) => {
-  // your code here
-};
+  const newIndex = 0;
+  if( index < array.length) {
+    return array[index];
+  }
+    else if (index >= array.length){
+      return array[newIndex + (index - array.length)]
+    }
+ };
+
 
 const arrayToCSVString = array => {
-  // your code here
+  return array.join();
 };
 
 const csvStringToArray = string => {
-  // your code here
+  return string.split(',');
 };
 
 const addToArray = (element, array) => {
-  // your code here
+  array.push(element);
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
-};
+  const myArray = array.slice();
+  myArray.push(element);
+  return myArray;
+}
 
 const removeNthElement = (index, array) => {
-  // your code here
+  return array.splice(index, 1);
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+  return numbers.toString().split(',');
 };
 
-const uppercaseWordsInArray = strings => {
-  // your code here
-};
+function uppercaseWordsInArray(strings) {
+  return String(strings).toUpperCase().split(",");
+}
 
 const reverseWordsInArray = strings => {
-  // your code here
+  return strings.map(item => item.split('').reverse().join(''));
 };
 
-const onlyEven = numbers => {
-  // your code here
-};
+function onlyEven(numbers) {
+  const evenNumbers = numbers.filter((num) => num % 2 === 0);
+  return evenNumbers;
+}
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+   return array.slice(0,index).concat(array.slice(index+1))
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+   return strings.filter(str => /^[aeiou]/i.test(str));
 };
 
 const removeSpaces = string => {
-  // your code here
+  return string.replace(/\s+/g, '');
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  return numbers.reduce((a, b) => a + b, 0);
 };
 
 const sortByLastLetter = strings => {
-  // your code here
-};
+  return strings.sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1)); 
+  
+}; 
 
 module.exports = {
   getNthElement,
